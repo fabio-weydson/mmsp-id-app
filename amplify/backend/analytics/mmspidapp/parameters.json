@@ -1,0 +1,21 @@
+{
+    "appName": "mmspidapp",
+    "roleName": "pinpointLambdaRolee284eff1",
+    "cloudformationPolicyName": "cloudformationPolicye284eff1",
+    "cloudWatchPolicyName": "cloudWatchPolicye284eff1",
+    "pinpointPolicyName": "pinpointPolicye284eff1",
+    "authPolicyName": "pinpoint_amplify_e284eff1",
+    "unauthPolicyName": "pinpoint_amplify_e284eff1",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
